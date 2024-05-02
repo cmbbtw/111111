@@ -10,14 +10,12 @@ namespace ClassLibrary1
         {
             throw new NotImplementedException();
         }
-
         private DateTime dateTime;
         private Var09_Employees employees;
         private Var02_TheAudience theAudience;
         private Var04_Group group;
         private Var07_Couple couple;
         private Var14_Classes classes;
-
         public string datetime
         {
             get { return dateTime.ToString(); }
@@ -48,7 +46,6 @@ namespace ClassLibrary1
             get { return classes.ToString(); }
             set { classes = Var14_Classes.ToString(value); }
         }
-
         public Var01_Class(string dateTime, string discipline, string employees, string theAudience, string group, string couple, string classes)
         {
             datetime = dateTime;
@@ -58,7 +55,5 @@ namespace ClassLibrary1
             Couple = couple;
             Classes = classes;
         }
-
-
-}
+  }
 }
